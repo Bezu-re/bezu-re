@@ -1,4 +1,5 @@
 @import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
 @font-face {
   font-family: "StretchPro";
   src: url("../font/stretch_pro/StretchPro.otf");
@@ -18,6 +19,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 .container .muhammadali header .header_logo {
+  cursor: pointer;
   padding-top: 58px;
   padding-left: 150px;
   padding-right: 234px;
@@ -32,28 +34,54 @@ body {
   gap: 109px;
 }
 .container .muhammadali header nav ul li {
+  cursor: pointer;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #121416;
+  transition: all 0.4s;
+  position: relative;
+}
+.container .muhammadali header nav ul li::before {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: #84b898;
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.container .muhammadali header nav ul li:hover::before {
+  top: 100%;
+  left: 0%;
+  opacity: 1;
 }
 .container .muhammadali header .Sign_Up {
   padding-top: 45px;
 }
 .container .muhammadali header .Sign_Up button {
+  cursor: pointer;
   background: #84b898;
   border: 1px solid #84b898;
   box-shadow: 5px 10px 20px rgba(132, 184, 152, 0.46);
   font-family: "Stretch Pro";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
   width: 133px;
   height: 46px;
+  transition: all 0.4s;
+}
+.container .muhammadali header .Sign_Up button:hover {
+  background-color: #ffffff;
+  color: #84b898;
+  border: 1px solid #ffffff;
 }
 .container .muhammadali .m_section_one {
   padding-left: 143px;
@@ -62,9 +90,9 @@ body {
   text-align: center;
   padding-top: 107px;
   padding-bottom: 34px;
-  font-family: "Stretch Pro";
+  font-family: "StretchPro";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 60px;
   line-height: 61px;
   color: #101418;
@@ -92,7 +120,155 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(1) {
+  cursor: pointer;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) {
+  padding-left: 81px;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) {
+  display: inline-block;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) h1 {
+  padding-top: 155px;
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  color: #101418;
+  padding-right: 54px;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) .m_section_one_grid_item_child_block {
+  display: inline-block;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) .m_section_one_grid_item_child_block span {
+  transform: translate(435%, -240%);
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) .m_section_one_grid_item_child_block h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #84b898;
+  transform: rotate(-90deg);
+  padding-left: 54px;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) {
+  justify-content: start;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) button {
+  background: #101418;
+  width: 174px;
+  height: 52px;
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-right: 47px;
+  margin-top: 59px;
+  justify-content: start;
+  transition: all 0.4s;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) button:hover {
+  background-color: #ffffff;
+  color: #101418;
+  border: 1px solid #ffffff;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) h6 {
+  font-family: "StretchPro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+  background: linear-gradient(90.55deg, #eabca0 0.1%, #faaf8b 98.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) span {
+  transform: translateY(10%);
+}
 .container .muhammadali .m_section_one .m_section_one_item {
+  padding-bottom: 82px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) {
+  display: inline;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) h1 {
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 61px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(2) {
+  display: inline;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(2) h1 {
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 61px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(2) p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) {
+  padding-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(2) p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(2) h1 {
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 61px;
+  color: #101418;
+}
+
+@font-face {
+  font-family: "StretchPro";
+  src: url("../font/StretchPro.otf");
 }/*# sourceMappingURL=style.css.map */
