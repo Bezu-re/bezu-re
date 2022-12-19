@@ -41,4 +41,58 @@ body {
 }
 .container .muhammadali header .Sign_Up {
   padding-top: 45px;
+}
+.container .muhammadali header .Sign_Up button {
+  background: #84b898;
+  border: 1px solid #84b898;
+  box-shadow: 5px 10px 20px rgba(132, 184, 152, 0.46);
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  width: 133px;
+  height: 46px;
+}
+.container .muhammadali .m_section_one {
+  padding-left: 143px;
+}
+.container .muhammadali .m_section_one h1 {
+  text-align: center;
+  padding-top: 107px;
+  padding-bottom: 34px;
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 61px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one h1 span {
+  background: url(business-3d-red-and-white-megaphone.png);
+  filter: drop-shadow(0px 10px 20px rgba(255, 1, 1, 0.34));
+}
+.container .muhammadali .m_section_one h1 span img {
+  width: 67px;
+  height: 74px;
+  transform: translateY(30%);
+}
+.container .muhammadali .m_section_one p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 35px;
+}
+.container .muhammadali .m_section_one .m_section_one_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .muhammadali .m_section_one .m_section_one_item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }/*# sourceMappingURL=style.css.map */
