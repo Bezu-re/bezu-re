@@ -288,8 +288,27 @@ body {
   src: url("../font/StretchPro.otf");
 }
 .container .abbos .A_section_two {
+  border: 2px solid;
   width: 1300px;
   height: 473px;
-  background-color: #D8E7E2;
+  background-color: #d8e7e2;
   margin-left: 143px;
+  display: flex;
+}
+.container .abbos .A_section_two:nth-of-type(1) .A_section_two_item {
+  padding-top: 134px;
+  padding-left: 92px;
+  position: relative;
+  display: flex;
+}
+.container .abbos .A_section_two:nth-of-type(1) .A_section_two_item span {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 126px;
+  left: 0;
+}
+.container .abbos .A_section_two:nth-of-type(1) .A_section_two_item img {
+  width: 475px;
+  height: 268px;
 }/*# sourceMappingURL=style.css.map */
