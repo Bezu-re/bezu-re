@@ -1,7 +1,7 @@
 @import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
 @font-face {
   font-family: "StretchPro";
-  src: url("../font/stretch_pro/StretchPro.otf");
+  src: url("../font/StretchPro/StretchPro.otf");
 }
 * {
   margin: 0;
@@ -39,7 +39,7 @@ body {
             color: #121416;
             transition: all 0.4s;
             position: relative;
-            &::before{
+            &::before {
               content: "";
               width: 100%;
               height: 1.5px;
@@ -76,7 +76,7 @@ body {
           width: 133px;
           height: 46px;
           transition: all 0.4s;
-          &:hover{
+          &:hover {
             background-color: #ffffff;
             color: #84b898;
             border: 1px solid #ffffff;
@@ -169,7 +169,7 @@ body {
               background: #101418;
               width: 174px;
               height: 52px;
-              font-family: "Stretch Pro";
+              font-family: "StretchPro";
               font-style: normal;
               font-weight: 600;
               font-size: 14px;
@@ -178,10 +178,10 @@ body {
               margin-right: 47px;
               margin-top: 30px;
               justify-content: start;
-              transition: all .4s;
-              &:hover{
+              transition: all 0.4s;
+              &:hover {
                 background-color: #ffffff;
-                color:#101418 ;
+                color: #101418;
                 border: 1px solid #ffffff;
               }
             }
@@ -213,6 +213,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
         :nth-of-type(1) {
           display: inline;
+          position: relative;
           h1 {
             font-family: "Stretch Pro";
             font-style: normal;
@@ -222,6 +223,20 @@ body {
             color: #101418;
           }
           p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #101418;
+          }
+          &::before {
+            content: "+10%";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 39px;
+            height: 24px;
             font-family: "Poppins";
             font-style: normal;
             font-weight: 400;
