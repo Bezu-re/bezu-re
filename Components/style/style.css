@@ -324,4 +324,9 @@ body {
   height: 473px;
   background-color: #D8E7E2;
   margin-left: 143px;
+}
+
+@font-face {
+  font-family: "StretchPro";
+  src: url("./font/StretchPro.otf");
 }/*# sourceMappingURL=style.css.map */
