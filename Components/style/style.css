@@ -2,7 +2,7 @@
 @import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
 @font-face {
   font-family: "StretchPro";
-  src: url("../font/stretch_pro/StretchPro.otf");
+  src: url("../font/StretchPro/StretchPro.otf");
 }
 * {
   margin: 0;
@@ -210,6 +210,7 @@ body {
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) {
   display: inline;
+  position: relative;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) h1 {
   font-family: "Stretch Pro";
@@ -220,6 +221,20 @@ body {
   color: #101418;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1)::before {
+  content: "+10%";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 39px;
+  height: 24px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
