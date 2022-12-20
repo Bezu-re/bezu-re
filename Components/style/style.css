@@ -172,7 +172,7 @@ body {
   background: #101418;
   width: 174px;
   height: 52px;
-  font-family: "Stretch Pro";
+  font-family: "StretchPro";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -292,4 +292,9 @@ body {
   height: 473px;
   background-color: #D8E7E2;
   margin-left: 143px;
+}
+
+@font-face {
+  font-family: "StretchPro";
+  src: url("./font/StretchPro.otf");
 }/*# sourceMappingURL=style.css.map */
