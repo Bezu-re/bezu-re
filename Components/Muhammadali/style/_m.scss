@@ -15,17 +15,20 @@ body {
 .container {
   .muhammadali {
     header {
+      padding-top: 30px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-items: center;
       .header_logo {
         cursor: pointer;
-        padding-top: 58px;
-        padding-left: 150px;
-        padding-right: 234px;
+        // padding-top: 58px;
+        // padding-left: 150px;
+        // padding-right: 234px;
       }
       nav {
-        padding-right: 214px;
-        padding-top: 56px;
+        // padding-right: 214px;
+        // padding-top: 56px;
         ul {
           display: flex;
           list-style-type: none;
@@ -62,7 +65,7 @@ body {
         }
       }
       .Sign_Up {
-        padding-top: 45px;
+        // padding-top: 45px;
         button {
           cursor: pointer;
           background: #84b898;
@@ -87,6 +90,17 @@ body {
     }
     .m_section_one {
       padding-left: 143px;
+      position: relative;
+      &::before {
+        content: url("/./bezu-re/Components/Muhammadali/before.png");
+        position: absolute;
+        top: 28%;
+        right: 5%;
+        background-size: 100% 100%;
+        width: 206px;
+        height: 206px;
+        z-index: 99;
+      }
       h1 {
         text-align: center;
         padding-top: 107px;
@@ -116,13 +130,6 @@ body {
         text-align: center;
         color: #000000;
         padding-bottom: 35px;
-        position: relative;
-        &::before{
-          position: absolute;
-          content: url("../m-image/before.png");
-          top: 50%;
-          right: 100%;
-        }
       }
       .m_section_one_grid {
         display: grid;
@@ -193,9 +200,9 @@ body {
                 line-height: 14px;
                 color: #ffffff;
                 margin-right: 47px;
-                &:hover{
+                &:hover {
                   background-color: #ffffff;
-                  color:#101418;
+                  color: #101418;
                   border: 1px solid #ffffff;
                 }
               }
@@ -216,8 +223,8 @@ body {
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
               }
-              span{
-                transform: translate(7px,49px);
+              span {
+                transform: translate(7px, 49px);
               }
             }
           }
@@ -343,5 +350,8 @@ body {
         }
       }
     }
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
   }
 }
