@@ -333,14 +333,19 @@ body {
   font-family: "StretchPro";
   src: url("../font/StretchPro.otf");
 }
-<<<<<<< HEAD
+.container .abbos .A_section_two {
+  width: 1300px;
+  height: 473px;
+  background-color: #D8E7E2;
+  margin-left: 143px;
+}
+
 @font-face {
   font-family: "Stretch Pro";
   src: url("../font/stretch_pro/StretchPro.otf;");
 }
 * {
   padding: 0;
-  margin: auto;
   box-sizing: border-box;
   max-width: 1420px;
 }
@@ -376,16 +381,9 @@ body .container .sardor .S_contener .S_section_one .S_section_one_items .S_secti
 body .container .sardor .S_contener .S_section_two {
   display: grid;
   grid-template-columns: 1, 3fr;
-=======
-.container .abbos .A_section_two {
-  width: 1300px;
-  height: 473px;
-  background-color: #D8E7E2;
-  margin-left: 143px;
 }
 
 @font-face {
   font-family: "StretchPro";
   src: url("./font/StretchPro.otf");
->>>>>>> 4d2e406e0a56e5389b4ae3a6721e443976e69bc4
 }/*# sourceMappingURL=style.css.map */
