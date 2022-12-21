@@ -1,8 +1,9 @@
 @import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
 @import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
 @font-face {
   font-family: "StretchPro";
-  src: url("../font/StretchPro/StretchPro.otf");
+  src: url("../font/StretchPro.otf");
 }
 * {
   margin: 0;
@@ -37,7 +38,7 @@ body {
   cursor: pointer;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #121416;
@@ -68,9 +69,9 @@ body {
   background: #84b898;
   border: 1px solid #84b898;
   box-shadow: 5px 10px 20px rgba(132, 184, 152, 0.46);
-  font-family: "Stretch Pro";
+  font-family: "StretchPro";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
@@ -92,7 +93,7 @@ body {
   padding-bottom: 34px;
   font-family: "StretchPro";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 60px;
   line-height: 61px;
   color: #101418;
@@ -115,6 +116,13 @@ body {
   text-align: center;
   color: #000000;
   padding-bottom: 35px;
+  position: relative;
+}
+.container .muhammadali .m_section_one p::before {
+  position: absolute;
+  content: url("../m-image/before.png");
+  top: 50%;
+  right: 100%;
 }
 .container .muhammadali .m_section_one .m_section_one_grid {
   display: grid;
@@ -123,29 +131,39 @@ body {
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(1) {
   cursor: pointer;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) {
-  padding-left: 81px;
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid {
+  display: flex;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) {
-  display: inline-block;
-}
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) h1 {
-  padding-top: 155px;
-  font-family: "Stretch Pro";
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_title h1 {
+  margin-top: 40px;
+  font-family: "StretchPro";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 30px;
   line-height: 45px;
   color: #101418;
-  padding-right: 54px;
+  padding-bottom: 21px;
+  cursor: text;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) .m_section_one_grid_item_child_block {
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_title p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  cursor: text;
+}
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_scrool {
   display: inline-block;
+  padding-top: 130px;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) .m_section_one_grid_item_child_block span {
-  transform: translate(435%, -240%);
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_scrool h5 {
+  transform: translate(43px, -47px);
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) .m_section_one_grid_item_child_block h5 {
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_scrool h6 {
+  transform: translateY(1000px);
+  display: flex;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -155,43 +173,36 @@ body {
   text-transform: uppercase;
   color: #84b898;
   transform: rotate(-90deg);
-  padding-left: 54px;
+  gap: 5px;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(1) p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #000000;
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn {
+  margin-left: 70px;
+  display: flex;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) {
-  justify-content: start;
-}
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) button {
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn button {
+  margin-top: 32px;
   background: #101418;
   width: 174px;
   height: 52px;
-  font-family: "Stretch Pro";
+  font-family: "StretchPro";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
   margin-right: 47px;
-  margin-top: 30px;
-  justify-content: start;
-  transition: all 0.4s;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) button:hover {
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn button:hover {
   background-color: #ffffff;
   color: #101418;
   border: 1px solid #ffffff;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) h6 {
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn h5 {
+  transform: translateY(50px);
+  text-align: center;
   font-family: "StretchPro";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   background: linear-gradient(90.55deg, #eabca0 0.1%, #faaf8b 98.96%);
@@ -199,11 +210,11 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) :nth-of-type(2) span {
-  transform: translateY(10%);
+.container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn span {
+  transform: translate(7px, 49px);
 }
 .container .muhammadali .m_section_one .m_section_one_item {
-  padding-bottom: 82px;
+  padding-bottom: 132px;
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -213,14 +224,21 @@ body {
   position: relative;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) h1 {
-  font-family: "Stretch Pro";
+  font-family: "StretchPro";
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
   line-height: 61px;
   color: #101418;
+  position: relative;
 }
-.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) p {
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) h1::before {
+  content: "+10%";
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 39px;
+  height: 24px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -228,13 +246,7 @@ body {
   line-height: 24px;
   color: #101418;
 }
-.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1)::before {
-  content: "+10%";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 39px;
-  height: 24px;
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -246,11 +258,26 @@ body {
   display: inline;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(2) h1 {
-  font-family: "Stretch Pro";
+  font-family: "StretchPro";
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
   line-height: 61px;
+  color: #101418;
+  position: relative;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(2) h1::before {
+  content: "+41%";
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 39px;
+  height: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #101418;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(2) p {
@@ -266,7 +293,12 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(1) span {
+  margin-right: 58px;
+}
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(2) p {
+  transform: translateY(30%);
+  display: flex;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -275,11 +307,25 @@ body {
   color: #101418;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(2) h1 {
-  font-family: "Stretch Pro";
+  font-family: "StretchPro";
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 61px;
+  color: #101418;
+}
+.container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(2) h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 39px;
+  height: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #101418;
 }
 
@@ -311,4 +357,52 @@ body {
 .container .abbos .A_section_two:nth-of-type(1) .A_section_two_item img {
   width: 475px;
   height: 268px;
+}
+
+@font-face {
+  font-family: "Stretch Pro";
+  src: url("../font/stretch_pro/StretchPro.otf;");
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1420px;
+}
+
+body .container .sardor .S_contener .S_section_one {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .sardor .S_contener .S_section_one .S_section_one_items {
+  border: inherit;
+}
+body .container .sardor .S_contener .S_section_one .S_section_one_items h1 {
+  font-family: "Stretch Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 68px;
+}
+body .container .sardor .S_contener .S_section_one .S_section_one_items h1 span {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+body .container .sardor .S_contener .S_section_one .S_section_one_items h1 span img {
+  width: 100%;
+  height: 100%;
+}
+body .container .sardor .S_contener .S_section_one .S_section_one_items .S_section_two_items {
+  border: inherit;
+}
+body .container .sardor .S_contener .S_section_two {
+  display: grid;
+  grid-template-columns: 1, 3fr;
+}
+
+@font-face {
+  font-family: "StretchPro";
+  src: url("./font/StretchPro.otf");
 }/*# sourceMappingURL=style.css.map */
