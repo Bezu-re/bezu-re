@@ -132,7 +132,7 @@ body {
   position: relative;
 }
 .container .muhammadali .m_section_one::before {
-  content: url("/bezu-re/Components/Muhammadali/style/before.png");
+  content: url("/Components/Muhammadali/style/before.png");
   position: absolute;
   top: 20%;
   right: 5%;
