@@ -208,14 +208,13 @@ body {
               display: flex;
               .m_section_one_grid_item_child_title {
                 h1 {
-                  margin-top: 40px;
                   font-family: "StretchPro";
                   font-style: normal;
                   font-weight: 400;
                   font-size: 30px;
                   line-height: 45px;
                   color: #101418;
-                  padding-bottom: 21px;
+                  padding-bottom: 41px;
                   cursor: text;
                 }
                 p {
@@ -230,7 +229,6 @@ body {
               }
               .m_section_one_grid_item_child_scrool {
                 display: inline-block;
-                padding-top: 130px;
                 h5 {
                   transform: translate(43px, -47px);
                 }
