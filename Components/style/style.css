@@ -241,7 +241,6 @@ body {
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
-  margin-right: 47px;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn button:hover {
   background-color: #ffffff;
@@ -249,7 +248,7 @@ body {
   border: 1px solid #ffffff;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn h5 {
-  transform: translateY(50px);
+  transform: translateY(16px);
   text-align: center;
   font-family: "StretchPro";
   font-style: normal;
@@ -262,11 +261,11 @@ body {
   background-clip: text;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn span {
-  transform: translate(7px, 49px);
+  transform: translate(-80px, 17px);
 }
 .container .muhammadali .m_section_one .m_section_one_item {
   padding-bottom: 132px;
-  padding-top: 20px;
+  padding-top: 96px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }

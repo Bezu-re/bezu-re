@@ -252,7 +252,7 @@ body {
             }
             .m_section_one_grid_item_child_btn {
               margin-left: 70px;
-              display: flex;
+              display:flex ;
               button {
                 margin-top: 32px;
                 background: #101418;
@@ -264,7 +264,6 @@ body {
                 font-size: 14px;
                 line-height: 14px;
                 color: #ffffff;
-                margin-right: 47px;
                 &:hover {
                   background-color: #ffffff;
                   color: #101418;
@@ -272,7 +271,7 @@ body {
                 }
               }
               h5 {
-                transform: translateY(50px);
+                transform: translateY(16px);
                 text-align: center;
                 font-family: "StretchPro";
                 font-style: normal;
@@ -289,7 +288,7 @@ body {
                 background-clip: text;
               }
               span {
-                transform: translate(7px, 49px);
+                transform: translate(-80px, 17px);
               }
             }
           }
@@ -297,7 +296,7 @@ body {
       }
       .m_section_one_item {
         padding-bottom: 132px;
-        padding-top: 20px;
+        padding-top: 96px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         :nth-of-type(1) {
