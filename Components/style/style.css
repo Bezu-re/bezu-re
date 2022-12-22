@@ -1,5 +1,5 @@
 @import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
-@import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
 @font-face {
   font-family: "StretchPro";
@@ -331,32 +331,293 @@ body {
 
 @font-face {
   font-family: "StretchPro";
-  src: url("../font/StretchPro.otf");
+  src: url("../font/StretchPro.otf;");
 }
 .container .abbos .A_section_two {
-  border: 2px solid;
   width: 1300px;
   height: 473px;
   background-color: #d8e7e2;
   margin-left: 143px;
   display: flex;
 }
-.container .abbos .A_section_two:nth-of-type(1) .A_section_two_item {
-  padding-top: 134px;
-  padding-left: 92px;
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) {
   position: relative;
-  display: flex;
+  width: 50%;
 }
-.container .abbos .A_section_two:nth-of-type(1) .A_section_two_item span {
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) .A_section_two_item_hand img {
   width: 70px;
   height: 50px;
   position: absolute;
-  top: 126px;
+  top: 127px;
   left: 0;
 }
-.container .abbos .A_section_two:nth-of-type(1) .A_section_two_item img {
-  width: 475px;
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) img {
+  width: 425px;
   height: 268px;
+  position: absolute;
+  top: 134px;
+  left: 92px;
+}
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(2) {
+  width: 50%;
+}
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(2) h1 {
+  width: 474px;
+  font-family: "StretchPro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #101418;
+  padding-top: 78px;
+}
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(2) p {
+  width: 497px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101418;
+  padding-top: 24px;
+}
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(2) ul li {
+  list-style-type: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 19px;
+}
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(2) ul li span {
+  margin-top: 20px;
+}
+.container .abbos .A_section_thyree {
+  padding-left: 143px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) {
+  width: 1300px;
+  height: 600px;
+  display: flex;
+  padding-top: 148px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child {
+  width: 50%;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child h1 {
+  width: 730px;
+  font-family: "StretchPro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 60px;
+  color: #101418;
+  display: inline-block;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child h1 img {
+  width: 77px;
+  height: 77px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101418;
+  padding-top: 33px;
+  padding-bottom: 89px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child button {
+  width: 170px;
+  height: 50px;
+  font-family: "StretchPro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  background: #101418;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child button:hover {
+  background-color: #fff;
+  color: #101418;
+  cursor: pointer;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 {
+  width: 50%;
+  padding-top: 98px;
+  padding-left: 20px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box {
+  width: 500px;
+  height: 320px;
+  position: relative;
+  border: 1px solid #c2ccc8;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box table {
+  padding-top: 10px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box table td {
+  padding: 15px 15px 15px 15px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #101418;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box img {
+  width: 400px;
+  height: 153px;
+  position: absolute;
+  top: 131px;
+  left: 100px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box .A_section_thyree_item_child_box_litl {
+  width: 290px;
+  height: 120px;
+  background: #c6dbce;
+  position: absolute;
+  top: -58px;
+  left: 256px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box .A_section_thyree_item_child_box_litl .A_section_thyree_item_child_box_litl_img {
+  width: 56px;
+  height: 56px;
+  background-color: #84b898;
+  margin-top: 34px;
+  margin-left: 31px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box .A_section_thyree_item_child_box_litl .A_section_thyree_item_child_box_litl_img img {
+  width: 30px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box .A_section_thyree_item_child_box_litl h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #101418;
+  position: absolute;
+  top: 37px;
+  left: 112px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child-2 .A_section_thyree_item_child_big_box .A_section_thyree_item_child_box_litl h1 {
+  font-family: "StretchPro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #101418;
+  position: absolute;
+  top: 67px;
+  left: 112px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) {
+  width: 100%;
+  height: 488px;
+  padding-top: 129px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc:nth-of-type(1) {
+  width: 260px;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc:nth-of-type(1) p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc:nth-of-type(2) {
+  padding-left: 90px;
+}
+.container .abbos .A_section_four {
+  width: 100%;
+  height: 470px;
+  position: relative;
+  padding-left: 143px;
+}
+.container .abbos .A_section_four::before {
+  content: url("/./bezu-re/Components/Abbos/image/Mask group.png");
+  position: absolute;
+  right: 0;
+  top: 60%;
+  background: transparent;
+  border-radius: 141%;
+  box-shadow: 8px 8px 8px 8px rgba(102, 44, 126, 0.27);
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(1) h1 {
+  font-family: "StretchPro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #101418;
+  position: relative;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(1) h1 span {
+  width: 110px;
+  height: 65px;
+  margin-top: 50px;
+  position: absolute;
+  left: 200px;
+  top: 118px;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 66px;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) img {
+  width: 135px;
+  height: 52px;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(2) {
+  padding-top: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(2) h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #000000;
 }
 
 @font-face {
