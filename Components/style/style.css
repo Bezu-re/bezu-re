@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  border: 3px solid red;
+  border: 2px solid red;
 }
 .container .muhammadali {
   border: inherit;
@@ -140,7 +140,7 @@ body {
   height: 206px;
   z-index: 99;
 }
-.container .muhammadali .m_section_one h1 {
+.container .muhammadali .m_section_one .m_section_one_text h1 {
   text-align: center;
   padding-top: 107px;
   padding-bottom: 34px;
@@ -151,16 +151,16 @@ body {
   line-height: 61px;
   color: #101418;
 }
-.container .muhammadali .m_section_one h1 span {
+.container .muhammadali .m_section_one .m_section_one_text h1 span {
   background: url(business-3d-red-and-white-megaphone.png);
   filter: drop-shadow(0px 10px 20px rgba(255, 1, 1, 0.34));
 }
-.container .muhammadali .m_section_one h1 span img {
+.container .muhammadali .m_section_one .m_section_one_text h1 span img {
   width: 67px;
   height: 74px;
   transform: translateY(30%);
 }
-.container .muhammadali .m_section_one p {
+.container .muhammadali .m_section_one .m_section_one_text p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -188,11 +188,12 @@ body {
   font-family: "StretchPro";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 45px;
   color: #101418;
   padding-bottom: 41px;
   cursor: text;
+  padding-left: 52px;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_title p {
   font-family: "Poppins";
@@ -202,6 +203,7 @@ body {
   line-height: 24px;
   color: #000000;
   cursor: text;
+  padding-left: 53px;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_scrool {
   display: inline-block;
@@ -210,7 +212,6 @@ body {
   transform: translate(43px, -47px);
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_scrool h6 {
-  transform: translateY(1000px);
   display: flex;
   font-family: "Poppins";
   font-style: normal;
@@ -224,11 +225,10 @@ body {
   gap: 5px;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn {
-  margin-left: 70px;
   display: flex;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn button {
-  margin-top: 32px;
+  margin-top: 59px;
   background: #101418;
   width: 174px;
   height: 52px;
@@ -246,7 +246,7 @@ body {
   transition: all 0.4s;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn h5 {
-  transform: translateY(16px);
+  transform: translateY(30px);
   text-align: center;
   font-family: "StretchPro";
   font-style: normal;
@@ -259,9 +259,10 @@ body {
   background-clip: text;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn span {
-  transform: translate(-80px, 17px);
+  transform: translate(-105px, 31.5px);
 }
 .container .muhammadali .m_section_one .m_section_one_item {
+  gap: 100px;
   padding-bottom: 132px;
   padding-top: 96px;
   display: grid;
@@ -283,7 +284,7 @@ body {
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(1) h1::before {
   content: "+10%";
   position: absolute;
-  top: 45%;
+  top: -10%;
   right: 0;
   width: 39px;
   height: 24px;
@@ -317,7 +318,7 @@ body {
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(2) h1::before {
   content: "+41%";
   position: absolute;
-  top: 45%;
+  top: -10%;
   right: 0;
   width: 39px;
   height: 24px;
@@ -337,15 +338,14 @@ body {
   color: #101418;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) {
-  padding-right: 100px;
+  padding-right: 150px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(1) span {
-  margin-right: 58px;
+  margin-right: 28px;
 }
 .container .muhammadali .m_section_one .m_section_one_item :nth-of-type(3) :nth-of-type(2) p {
-  transform: translateY(30%);
   display: flex;
   font-family: "Poppins";
   font-style: normal;
@@ -376,13 +376,17 @@ body {
   line-height: 24px;
   color: #101418;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1401px) {
   .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_title h1 {
     font-size: 20px;
     line-height: 35px;
   }
   .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_grid .m_section_one_grid_item_child_title h1 br {
     display: none;
+  }
+  .container .muhammadali .m_section_one::before {
+    top: 23%;
+    right: 7%;
   }
 }
 @media screen and (max-width: 1335px) {
@@ -395,7 +399,7 @@ body {
   }
 }
 @media screen and (max-width: 1300px) {
-  .container .muhammadali .m_section_one h1 {
+  .container .muhammadali .m_section_one .m_section_one_text h1 {
     font-size: 50px;
     line-height: 51px;
   }
@@ -432,11 +436,11 @@ body {
   }
 }
 @media screen and (max-width: 1200px) {
-  .container .muhammadali .m_section_one h1 {
+  .container .muhammadali .m_section_one .m_section_one_text h1 {
     font-size: 40px;
     line-height: 41px;
   }
-  .container .muhammadali .m_section_one h1 span img {
+  .container .muhammadali .m_section_one .m_section_one_text h1 span img {
     width: 57px;
     height: 64px;
   }
@@ -510,19 +514,21 @@ body {
   }
 }
 @media screen and (max-width: 980px) {
-  .container .muhammadali .m_section_one h1 {
+  .container .muhammadali .m_section_one .m_section_one_text h1 {
     margin-bottom: 10px;
     font-size: 30px;
     line-height: 31px;
+    padding-right: 150px;
   }
-  .container .muhammadali .m_section_one h1 span img {
+  .container .muhammadali .m_section_one .m_section_one_text h1 span img {
     width: 57px;
     height: 64px;
   }
-  .container .muhammadali .m_section_one p {
+  .container .muhammadali .m_section_one .m_section_one_text p {
     margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 150px;
   }
   .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(1) img {
     width: 400px;

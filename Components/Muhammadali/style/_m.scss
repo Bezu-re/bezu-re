@@ -12,7 +12,7 @@ body {
   background: #dddddd;
 }
 .container {
-  border: 3px solid red;
+  border: 2px solid red;
   .muhammadali {
     border: inherit;
     header {
@@ -161,35 +161,37 @@ body {
         height: 206px;
         z-index: 99;
       }
-      h1 {
-        text-align: center;
-        padding-top: 107px;
-        padding-bottom: 34px;
-        font-family: "StretchPro";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 61px;
-        color: #101418;
-        span {
-          img {
-            width: 67px;
-            height: 74px;
-            transform: translateY(30%);
+      .m_section_one_text {
+        h1 {
+          text-align: center;
+          padding-top: 107px;
+          padding-bottom: 34px;
+          font-family: "StretchPro";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 61px;
+          color: #101418;
+          span {
+            img {
+              width: 67px;
+              height: 74px;
+              transform: translateY(30%);
+            }
+            background: url(business-3d-red-and-white-megaphone.png);
+            filter: drop-shadow(0px 10px 20px rgba(255, 1, 1, 0.34));
           }
-          background: url(business-3d-red-and-white-megaphone.png);
-          filter: drop-shadow(0px 10px 20px rgba(255, 1, 1, 0.34));
         }
-      }
-      p {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        color: #000000;
-        padding-bottom: 35px;
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #000000;
+          padding-bottom: 35px;
+        }
       }
       .m_section_one_grid {
         display: grid;
@@ -210,11 +212,12 @@ body {
                   font-family: "StretchPro";
                   font-style: normal;
                   font-weight: 400;
-                  font-size: 30px;
+                  font-size: 24px;
                   line-height: 45px;
                   color: #101418;
                   padding-bottom: 41px;
                   cursor: text;
+                  padding-left: 52px;
                 }
                 p {
                   font-family: "Poppins";
@@ -224,6 +227,7 @@ body {
                   line-height: 24px;
                   color: #000000;
                   cursor: text;
+                  padding-left: 53px;
                 }
               }
               .m_section_one_grid_item_child_scrool {
@@ -232,7 +236,6 @@ body {
                   transform: translate(43px, -47px);
                 }
                 h6 {
-                  transform: translateY(1000px);
                   display: flex;
                   font-family: "Poppins";
                   font-style: normal;
@@ -248,10 +251,9 @@ body {
               }
             }
             .m_section_one_grid_item_child_btn {
-              margin-left: 70px;
               display: flex;
               button {
-                margin-top: 32px;
+                margin-top: 59px;
                 background: #101418;
                 width: 174px;
                 height: 52px;
@@ -269,7 +271,7 @@ body {
                 }
               }
               h5 {
-                transform: translateY(16px);
+                transform: translateY(30px);
                 text-align: center;
                 font-family: "StretchPro";
                 font-style: normal;
@@ -286,13 +288,14 @@ body {
                 background-clip: text;
               }
               span {
-                transform: translate(-80px, 17px);
+                transform: translate(-105px, 31.5px);
               }
             }
           }
         }
       }
       .m_section_one_item {
+        gap: 100px;
         padding-bottom: 132px;
         padding-top: 96px;
         display: grid;
@@ -311,7 +314,7 @@ body {
             &::before {
               content: "+10%";
               position: absolute;
-              top: 45%;
+              top: -10%;
               right: 0;
               width: 39px;
               height: 24px;
@@ -345,7 +348,7 @@ body {
             &::before {
               content: "+41%";
               position: absolute;
-              top: 45%;
+              top: -10%;
               right: 0;
               width: 39px;
               height: 24px;
@@ -367,17 +370,16 @@ body {
           }
         }
         :nth-of-type(3) {
-          padding-right: 100px;
+          padding-right: 150px;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           :nth-of-type(1) {
             span {
-              margin-right: 58px;
+              margin-right: 28px;
             }
           }
           :nth-of-type(2) {
             p {
-              transform: translateY(30%);
               display: flex;
               font-family: "Poppins";
               font-style: normal;
@@ -411,7 +413,7 @@ body {
           }
         }
       }
-      @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 1401px) {
         .m_section_one_grid {
           :nth-of-type(2) {
             .m_section_one_grid_item_child {
@@ -428,6 +430,10 @@ body {
               }
             }
           }
+        }
+        &::before {
+          top: 23%;
+          right: 7%;
         }
       }
       @media screen and (max-width: 1335px) {
@@ -452,9 +458,11 @@ body {
         }
       }
       @media screen and (max-width: 1300px) {
-        h1 {
-          font-size: 50px;
-          line-height: 51px;
+        .m_section_one_text {
+          h1 {
+            font-size: 50px;
+            line-height: 51px;
+          }
         }
       }
       @media screen and (max-width: 1278px) {
@@ -517,13 +525,15 @@ body {
         }
       }
       @media screen and (max-width: 1200px) {
-        h1 {
-          font-size: 40px;
-          line-height: 41px;
-          span {
-            img {
-              width: 57px;
-              height: 64px;
+        .m_section_one_text {
+          h1 {
+            font-size: 40px;
+            line-height: 41px;
+            span {
+              img {
+                width: 57px;
+                height: 64px;
+              }
             }
           }
         }
@@ -639,21 +649,25 @@ body {
         }
       }
       @media screen and (max-width: 980px) {
-        h1 {
-          margin-bottom: 10px;
-          font-size: 30px;
-          line-height: 31px;
-          span {
-            img {
-              width: 57px;
-              height: 64px;
+        .m_section_one_text {
+          h1 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            line-height: 31px;
+            padding-right: 150px;
+            span {
+              img {
+                width: 57px;
+                height: 64px;
+              }
             }
           }
-        }
-        p {
-          margin-bottom: 10px;
-          font-size: 16px;
-          line-height: 24px;
+          p {
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 20px;
+            padding-right: 150px;
+          }
         }
         .m_section_one_grid {
           :nth-of-type(1) {
