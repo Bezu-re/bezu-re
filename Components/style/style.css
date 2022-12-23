@@ -81,7 +81,6 @@ body {
 .container .muhammadali header .Sign_Up button:hover {
   background-color: #ffffff;
   color: #84b898;
-  border: 1px solid #ffffff;
 }
 @media screen and (max-width: 1300px) {
   .container .muhammadali header nav ul {
@@ -239,11 +238,12 @@ body {
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+  transition: all 0.4s;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn button:hover {
   background-color: #ffffff;
   color: #101418;
-  border: 1px solid #ffffff;
+  transition: all 0.4s;
 }
 .container .muhammadali .m_section_one .m_section_one_grid :nth-of-type(2) .m_section_one_grid_item_child .m_section_one_grid_item_child_btn h5 {
   transform: translateY(16px);

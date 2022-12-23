@@ -84,7 +84,6 @@ body {
           &:hover {
             background-color: #ffffff;
             color: #84b898;
-            border: 1px solid #ffffff;
           }
         }
       }
@@ -262,10 +261,11 @@ body {
                 font-size: 14px;
                 line-height: 14px;
                 color: #ffffff;
+                transition: all 0.4s;
                 &:hover {
                   background-color: #ffffff;
                   color: #101418;
-                  border: 1px solid #ffffff;
+                  transition: all 0.4s;
                 }
               }
               h5 {
