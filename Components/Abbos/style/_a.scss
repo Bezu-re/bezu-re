@@ -6,34 +6,38 @@
 .container {
   .abbos {
     .A_section_two {
-      width: 1300px;
-      height: 473px;
+    //   width: 100%;
+    //   height: 473px;
       background-color: #d8e7e2;
       margin-left: 143px;
-      display: flex;
+      display: grid;
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+      &::before {
+        content: "";
+        background: url("/Components/Abbos/image/hand12.png") no-repeat;
+        background-size: 100% 100%;
+        width: 70px;
+        height: 40px;
+        position: absolute;
+        top: 126px;
+        left: 0;
+      }
       .A_section_two_item {
         &:nth-of-type(1) {
-          position: relative;
-          width: 50%;
-          .A_section_two_item_hand {
-            img {
-              width: 70px;
-              height: 50px;
-              position: absolute;
-              top: 127px;
-              left: 0;
-            }
-          }
-          img {
+          .A_section_two_item_frame {
             width: 425px;
             height: 268px;
-            position: absolute;
-            top: 134px;
-            left: 92px;
+            padding-top: 10px;
+            padding-left: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
         &:nth-of-type(2) {
-          width: 50%;
+            padding-bottom: 50px;
           h1 {
             width: 474px;
             font-family: "StretchPro";
@@ -42,7 +46,7 @@
             font-size: 30px;
             line-height: 45px;
             color: #101418;
-            padding-top: 78px;
+            margin-right: 30px;
           }
           p {
             width: 497px;
@@ -63,9 +67,6 @@
               font-size: 16px;
               line-height: 24px;
               padding-top: 19px;
-              span {
-                margin-top: 20px;
-              }
             }
           }
         }
@@ -74,10 +75,11 @@
     .A_section_thyree {
       padding-left: 143px;
       .A_section_thyree_item {
+        display: flex;
+
         &:nth-of-type(1) {
           width: 1300px;
           height: 600px;
-          display: flex;
           padding-top: 148px;
           .A_section_thyree_item_child {
             width: 50%;
@@ -206,27 +208,22 @@
         &:nth-of-type(2) {
           width: 100%;
           height: 488px;
-          padding-top: 129px;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          .A_section_thyree_item_bloc {
-            &:nth-of-type(1) {
-              width: 260px;
-              height: 480px;
-              justify-content: center;
-              align-items: center;
-              margin-top: 160px;
-              p {
-                font-family: "Poppins";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                color: #000000;
-              }
+          .A_section_thyree_item_bloc1 {
+            width: 260px;
+            height: 480px;
+            padding-top: 160px;
+            p {
+              transform: translateX(-189px);
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: #000000;
+              padding-top: 26px;
             }
-            &:nth-of-type(2) {
-              padding-left: 90px;
+            img {
+              transform: translateX(-189px);
             }
           }
         }
@@ -237,15 +234,6 @@
       height: 470px;
       position: relative;
       padding-left: 143px;
-      &::before {
-        content: url("/./bezu-re/Components/Abbos/image/Mask group.png");
-        position: absolute;
-        right: 0;
-        top: 60%;
-        background: transparent;
-        border-radius: 141%;
-        box-shadow: 8px 8px 8px 8px rgb(102 44 126 / 27%);
-      }
       .A_section_four_item {
         &:nth-of-type(1) {
           h1 {
@@ -257,29 +245,33 @@
             text-align: center;
             text-transform: capitalize;
             color: #101418;
-            position: relative;
             span {
               width: 110px;
               height: 65px;
-              margin-top: 50px;
-              position: absolute;
-              left: 200px;
-              top: 118px;
+              img {
+                transform: translateX(25px) translateY(10px);
+
+                width: inherit;
+                height: inherit;
+              }
             }
           }
         }
         &:nth-of-type(2) {
+          display: flex;
           .A_section_four_item_child {
             &:nth-of-type(1) {
               display: flex;
-              width: 50%;
-              justify-content: flex-end;
-              align-items: center;
-              padding-top: 66px;
-              img {
+              margin-left: 550px;
+              .A_section_four_item_child_img {
                 width: 135px;
                 height: 52px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
               }
+
               h5 {
                 font-family: "Poppins";
                 font-style: normal;
@@ -291,10 +283,14 @@
               }
             }
             &:nth-of-type(2) {
-              padding-top: 60px;
-              display: flex;
-              justify-content: flex-end;
+              padding-top: 75px;
+              padding-left: 190px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
               h5 {
+                padding-right: 10px;
                 font-family: "Poppins";
                 font-style: normal;
                 font-weight: 400;
@@ -308,5 +304,21 @@
         }
       }
     }
-  }
+    @media screen and (max-width: 1320px) {
+        .A_section_two{
+            .A_section_two_item{
+                :nth-of-type(2){
+                    h1{
+                        font-size: 25x;
+                    }
+                }
+            }
+        }
+    }
 }
+@media screen and (min-width: 1440px) {
+    width: 1440px;
+}
+
+}
+

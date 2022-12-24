@@ -15,9 +15,6 @@ body {
   background: #dddddd;
 }
 
-.container {
-  border: 3px solid red;
-}
 .container .muhammadali {
   border: inherit;
 }
@@ -543,32 +540,34 @@ body {
   src: url("../font/StretchPro.otf;");
 }
 .container .abbos .A_section_two {
-  width: 1300px;
-  height: 473px;
   background-color: #d8e7e2;
   margin-left: 143px;
-  display: flex;
-}
-.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) {
+  display: grid;
   position: relative;
-  width: 50%;
+  grid-template-columns: repeat(2, 1fr);
 }
-.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) .A_section_two_item_hand img {
+.container .abbos .A_section_two::before {
+  content: "";
+  background: url("/Components/Abbos/image/hand12.png") no-repeat;
+  background-size: 100% 100%;
   width: 70px;
-  height: 50px;
+  height: 40px;
   position: absolute;
-  top: 127px;
+  top: 126px;
   left: 0;
 }
-.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) img {
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) .A_section_two_item_frame {
   width: 425px;
   height: 268px;
-  position: absolute;
-  top: 134px;
-  left: 92px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.container .abbos .A_section_two .A_section_two_item:nth-of-type(1) .A_section_two_item_frame img {
+  width: 100%;
+  height: 100%;
 }
 .container .abbos .A_section_two .A_section_two_item:nth-of-type(2) {
-  width: 50%;
+  padding-bottom: 50px;
 }
 .container .abbos .A_section_two .A_section_two_item:nth-of-type(2) h1 {
   width: 474px;
@@ -578,7 +577,7 @@ body {
   font-size: 30px;
   line-height: 45px;
   color: #101418;
-  padding-top: 78px;
+  margin-right: 30px;
 }
 .container .abbos .A_section_two .A_section_two_item:nth-of-type(2) p {
   width: 497px;
@@ -599,16 +598,15 @@ body {
   line-height: 24px;
   padding-top: 19px;
 }
-.container .abbos .A_section_two .A_section_two_item:nth-of-type(2) ul li span {
-  margin-top: 20px;
-}
 .container .abbos .A_section_thyree {
   padding-left: 143px;
+}
+.container .abbos .A_section_thyree .A_section_thyree_item {
+  display: flex;
 }
 .container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) {
   width: 1300px;
   height: 600px;
-  display: flex;
   padding-top: 148px;
 }
 .container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(1) .A_section_thyree_item_child {
@@ -737,42 +735,30 @@ body {
 .container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) {
   width: 100%;
   height: 488px;
-  padding-top: 129px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
-.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc:nth-of-type(1) {
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc1 {
   width: 260px;
   height: 480px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 160px;
+  padding-top: 160px;
 }
-.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc:nth-of-type(1) p {
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc1 p {
+  transform: translateX(-189px);
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  padding-top: 26px;
 }
-.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc:nth-of-type(2) {
-  padding-left: 90px;
+.container .abbos .A_section_thyree .A_section_thyree_item:nth-of-type(2) .A_section_thyree_item_bloc1 img {
+  transform: translateX(-189px);
 }
 .container .abbos .A_section_four {
   width: 100%;
   height: 470px;
   position: relative;
   padding-left: 143px;
-}
-.container .abbos .A_section_four::before {
-  content: url("/./bezu-re/Components/Abbos/image/Mask group.png");
-  position: absolute;
-  right: 0;
-  top: 60%;
-  background: transparent;
-  border-radius: 141%;
-  box-shadow: 8px 8px 8px 8px rgba(102, 44, 126, 0.27);
 }
 .container .abbos .A_section_four .A_section_four_item:nth-of-type(1) h1 {
   font-family: "StretchPro";
@@ -783,26 +769,30 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #101418;
-  position: relative;
 }
 .container .abbos .A_section_four .A_section_four_item:nth-of-type(1) h1 span {
   width: 110px;
   height: 65px;
-  margin-top: 50px;
-  position: absolute;
-  left: 250px;
-  top: 118px;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(1) h1 span img {
+  transform: translateX(25px) translateY(10px);
+  width: inherit;
+  height: inherit;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) {
+  display: flex;
 }
 .container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) {
   display: flex;
-  width: 50%;
-  justify-content: flex-end;
-  align-items: center;
-  padding-top: 66px;
+  margin-left: 550px;
 }
-.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) img {
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) .A_section_four_item_child_img {
   width: 135px;
   height: 52px;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) .A_section_four_item_child_img img {
+  width: 100%;
+  height: 100%;
 }
 .container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(1) h5 {
   font-family: "Poppins";
@@ -815,11 +805,15 @@ body {
   color: #000000;
 }
 .container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(2) {
-  padding-top: 60px;
-  display: flex;
-  justify-content: flex-end;
+  padding-top: 75px;
+  padding-left: 190px;
+}
+.container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
 }
 .container .abbos .A_section_four .A_section_four_item:nth-of-type(2) .A_section_four_item_child:nth-of-type(2) h5 {
+  padding-right: 10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -827,6 +821,16 @@ body {
   line-height: 24px;
   text-align: right;
   color: #000000;
+}
+@media screen and (max-width: 1320px) {
+  .container .abbos .A_section_two .A_section_two_item :nth-of-type(2) h1 {
+    font-size: 25x;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
 }
 
 .sardor {
